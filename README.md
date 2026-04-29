@@ -1,6 +1,6 @@
 # Utils JS
 
-JavaScript utility functions library
+A comprehensive JavaScript utility library with TypeScript support.
 
 ## Installation
 
@@ -10,26 +10,33 @@ npm install utils-js
 
 ## Usage
 
-```javascript
-const utils = require('utils-js');
+```typescript
+import { debounce, deepClone, isEmpty } from 'utils-js';
 
-// Debounce
-const debouncedFn = utils.debounce(() => console.log('Called'), 300);
-
-// Throttle
-const throttledFn = utils.throttle(() => console.log('Called'), 300);
-
-// Deep Clone
-const cloned = utils.deepClone({ a: 1, b: { c: 2 } });
-
-// Check if empty
-utils.isEmpty([]); // true
-utils.isEmpty({}); // true
-
-// Random number
-utils.randomBetween(1, 10);
+const debounced = debounce(() => console.log('Called'), 300);
+const cloned = deepClone({ a: 1, b: { c: 2 } });
+isEmpty([]); // true
 ```
 
-## License
+## API
 
-MIT
+### debounce(fn, wait, options?)
+Creates a debounced function.
+
+### throttle(fn, limit)
+Creates a throttled function.
+
+### deepClone(obj)
+Deep clones an object or array.
+
+### isEmpty(value)
+Checks if value is empty.
+
+### randomBetween(min, max)
+Returns random number between min and max.
+
+## Testing
+
+```bash
+npm test
+```
