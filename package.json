@@ -1,0 +1,12 @@
+{
+  "name": "utils-js",
+  "version": "1.0.0",
+  "description": "JavaScript utility functions library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["utils", "javascript", "helpers"],
+  "author": "leeydev <adaylete@gmail.com>",
+  "license": "MIT"
+}
